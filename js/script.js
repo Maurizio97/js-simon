@@ -26,13 +26,31 @@ let numGen = [];
 
 // genero i numeri
 generateNumberWhitoutClone(numGen, 5, 1, 100);
-// inserisco i numeri in pagina
-numGen.forEach(element => {
-    createElement(divCont, element);
-});
+// inserisco i numeri in pagina 
+// original
+// numGen.forEach(element => {
+//     createElement(divCont, element);
+// });
+
+// test
+/* numGen.forEach(element => {
+    setInterval(numGen.forEach(element => {
+        console.log(element);
+        console.log("ciao");
+        createElement(divCont, element);
+    }), 2000);
+    
+}); */
+
+// test
+// setInterval(numGen.forEach(element => {
+//     console.log(element);
+//     console.log("ciao");
+//     /* createElement(divCont, element); */
+// }), 2000); 
 
 // dopo 30 sec chiedo all'utente di inserire i numeri che ha visto
-setTimeout(() => {
+/* setTimeout(() => {
     for (let i = 0; i < numGen.length; i++){
         const attemp = parseInt(prompt(`che numeri hai visto? inseriscili 1 alla volta. ${i + 1}/5 `));
         if (numGen.includes(attemp) && !attempsList.includes(attemp)){
@@ -49,7 +67,7 @@ setTimeout(() => {
     attempsList.forEach(elem => {
         createElement(divCont, elem);
     });
-}, 5000);
+}, 5000); */
 
 
 
