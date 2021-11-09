@@ -32,17 +32,17 @@ generateNumberWhitoutClone(numGen, 5, 1, 100);
 //     createElement(divCont, element);
 // });
 
-// test
-/* numGen.forEach(element => {
+// test 1
+numGen.forEach(element => {
     setInterval(numGen.forEach(element => {
         console.log(element);
         console.log("ciao");
         createElement(divCont, element);
     }), 2000);
     
-}); */
+});
 
-// test
+// test 2
 // setInterval(numGen.forEach(element => {
 //     console.log(element);
 //     console.log("ciao");
