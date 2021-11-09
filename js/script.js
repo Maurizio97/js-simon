@@ -35,7 +35,7 @@ numGen.forEach(element => {
 setTimeout(() => {
     for (let i = 0; i < numGen.length; i++){
         const attemp = parseInt(prompt(`che numeri hai visto? inseriscili 1 alla volta. ${i + 1}/5 `));
-        if (numGen.includes(attemp)){
+        if (numGen.includes(attemp) && !attempsList.includes(attemp)){
             attempsList.push(attemp);
             counterAttemps++;
         }
