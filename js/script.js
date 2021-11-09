@@ -6,3 +6,12 @@ console.log("ciao");
 // Dopo 30 secondi l’utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
+// creo 5 numeri random casuali
+    // li salvo in un array
+    // li stampo in pagina
+// dopo 30 secondi chiedo all'utente quali erano i 5 numeri => setTimeout
+    // confronto gli input inseriti dall'utente con i valori che si trovano nell'array
+    // creo un contatore per salvarmi quanti numeri ha indovinato
+    // dico all'utente quanti e quali numeri ha inserito corretti 
+
+    
