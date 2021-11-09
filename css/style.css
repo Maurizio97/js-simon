@@ -20,7 +20,7 @@ h1 {
     text-align: center;
     margin-bottom: 15px;
 }
-.container-random-num {
+#container-random-num {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -31,4 +31,7 @@ h1 {
     background-color: darkcyan;
     width: 70px;
     height: 70px;
+    font-size: 40px;
+    color: white;
+    vertical-align: middle;
 }
