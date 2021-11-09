@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container-random-num {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.random-num {
+    background-color: darkcyan;
+    width: 70px;
+    height: 70px;
+}
