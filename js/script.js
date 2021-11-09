@@ -34,11 +34,11 @@ generateNumberWhitoutClone(numGen, 5, 1, 100);
 
 // test 1
 numGen.forEach(element => {
-    setInterval(numGen.forEach(element => {
+    setInterval(() => {
         console.log(element);
         console.log("ciao");
         createElement(divCont, element);
-    }), 2000);
+    }, 2000);
     
 });
 
