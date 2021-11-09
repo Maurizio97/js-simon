@@ -27,6 +27,14 @@ h1 {
     align-items: center;
 }
 
+#cont-attemp {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
 .random-num {
     background-color: darkcyan;
     width: 70px;

@@ -25,7 +25,7 @@ let counterAttemps = 0;
 let numGen = [];
 
 // genero i numeri
-generateNumberWhitoutClone(numGen, 5, 1, 5);
+generateNumberWhitoutClone(numGen, 5, 1, 100);
 // inserisco i numeri in pagina
 numGen.forEach(element => {
     createElement(divCont, element);
@@ -49,7 +49,7 @@ setTimeout(() => {
     attempsList.forEach(elem => {
         createElement(divCont, elem);
     });
-}, 1000);
+}, 5000);
 
 
 
@@ -80,5 +80,5 @@ function createElement(container, elem) {
 
 // crea la frase con il conteggio dei tentativi
 function createAttemp(container, elem ) {
-    container.innerHTML += `Hai inserito correttamente ${elem} numeri`
+    container.innerHTML = `Hai inserito correttamente ${elem} numeri`
 };
