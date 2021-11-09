@@ -27,47 +27,13 @@ let numGen = [];
 // genero i numeri
 generateNumberWhitoutClone(numGen, 5, 1, 100);
 console.log("array num gen",numGen);
-// let numGenLeng = numGen.length - 1;
 // inserisco i numeri in pagina 
-// original
-// numGen.forEach(element => {
-//     createElement(divCont, element);
-// });
+/* numGen.forEach(element => {
+    createElement(divCont, element);
+}); */
 
-/* for (let i = 0; i < numGen.length;i++){
-    setInterval(() => {
-        console.log("log i",numGen[i]);
-    }, 2000);
-}
- */
-// test 1
-/* console.log(numGen[numGenLeng]); */
-numGen.forEach(element => {
-    const interval = setInterval(() => {
-        console.log(element);
-        console.log("ciao");
-        createElement(divCont, element);
-        clearInterval(interval);
-    }, 1000);
-    
-});
-
-
-// test 2
-// setInterval(numGen.forEach(element => {
-//     console.log(element);
-//     console.log("ciao");
-//     /* createElement(divCont, element); */
-// }), 2000); 
-
-// test 3
-/* numGen.forEach(setInterval(numGen.forEach(element => {
-        console.log(element);
-        console.log("ciao");
-        createElement(divCont, element);
-    }), 2000));  */
 // dopo 30 sec chiedo all'utente di inserire i numeri che ha visto
-/* setTimeout(() => {
+setTimeout(() => {
     for (let i = 0; i < numGen.length; i++){
         const attemp = parseInt(prompt(`che numeri hai visto? inseriscili 1 alla volta. ${i + 1}/5 `));
         if (numGen.includes(attemp) && !attempsList.includes(attemp)){
@@ -84,9 +50,7 @@ numGen.forEach(element => {
     attempsList.forEach(elem => {
         createElement(divCont, elem);
     });
-}, 5000); */
-
-
+}, 5000);
 
 
 // funzioni utili
@@ -97,9 +61,24 @@ function generateNumberWhitoutClone(myArray, n, min, max) {
         let doppio = myArray.includes(number);
         if (doppio == false){
             myArray.push(number);
+            // inserisco i numeri in pagina 
+            createElement(divCont, number);
         }
     };
 };
+
+// funzione per generarne 1 ogni sec
+// async function generateNumberWhitoutClone(myArray, n, min, max) {
+//     while (myArray.length < n){
+//         let number = getRandomIntInclusive(min, max);
+//         let doppio = myArray.includes(number);
+//         if (doppio == false){
+//             myArray.push(number);
+//             createElement(divCont, number);
+//             await new Promise(r => setTimeout(r, 1000));
+//         }
+//     };
+// };
 
 // genera numeri da un min a un max
 function getRandomIntInclusive(min, max) {
