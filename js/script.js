@@ -26,21 +26,32 @@ let numGen = [];
 
 // genero i numeri
 generateNumberWhitoutClone(numGen, 5, 1, 100);
+console.log("array num gen",numGen);
+// let numGenLeng = numGen.length - 1;
 // inserisco i numeri in pagina 
 // original
 // numGen.forEach(element => {
 //     createElement(divCont, element);
 // });
 
-// test 1
-numGen.forEach(element => {
+/* for (let i = 0; i < numGen.length;i++){
     setInterval(() => {
+        console.log("log i",numGen[i]);
+    }, 2000);
+}
+ */
+// test 1
+/* console.log(numGen[numGenLeng]); */
+numGen.forEach(element => {
+    const interval = setInterval(() => {
         console.log(element);
         console.log("ciao");
         createElement(divCont, element);
-    }, 2000);
+        clearInterval(interval);
+    }, 1000);
     
 });
+
 
 // test 2
 // setInterval(numGen.forEach(element => {
@@ -49,6 +60,12 @@ numGen.forEach(element => {
 //     /* createElement(divCont, element); */
 // }), 2000); 
 
+// test 3
+/* numGen.forEach(setInterval(numGen.forEach(element => {
+        console.log(element);
+        console.log("ciao");
+        createElement(divCont, element);
+    }), 2000));  */
 // dopo 30 sec chiedo all'utente di inserire i numeri che ha visto
 /* setTimeout(() => {
     for (let i = 0; i < numGen.length; i++){
